@@ -10,7 +10,7 @@
   
   <title>
     
-      Hello World | Hexo
+      Overview of Neural Symbolic Reasoning | Hexo
     
   </title>
   <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -144,8 +144,8 @@
 </header>
 
     <div id="article-banner">
-  <h2>Hello World</h2>
-  <p class="post-date">2019-11-22</p>
+  <h2>Overview of Neural Symbolic Reasoning</h2>
+  <p class="post-date">2020-02-09</p>
   <div class="arrow-down">
     <a href="javascript:;" target="_blank" rel="noopener"></a>
   </div>
@@ -153,19 +153,59 @@
 <main class="app-body flex-box">
   <!-- Article START -->
   <article class="post-article">
-    <section class="markdown-content"><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+    <section class="markdown-content"><h1 id="Overview-of-Neural-Symbolic-Reasoning"><a href="#Overview-of-Neural-Symbolic-Reasoning" class="headerlink" title="Overview of Neural Symbolic Reasoning"></a>Overview of Neural Symbolic Reasoning</h1><h2 id="Why"><a href="#Why" class="headerlink" title="Why"></a>Why</h2><p>中文 &amp; 英文</p>
+<ul>
+<li><input disabled="" type="checkbox"> 神经符号的论文内容和代码阅读进度</li>
+<li><input disabled="" type="checkbox"> 我的教育背景、机器学习相关经历、下学期培养研究计划</li>
+<li><input disabled="" type="checkbox"> 教授的研究方向的概念和基础知识</li>
+<li><input disabled="" type="checkbox"> 机器学习的基础概念</li>
+<li><input disabled="" type="checkbox"> 教授最近几篇重点论文的主要内容</li>
+</ul>
+<hr>
+<h2 id="Why-1"><a href="#Why-1" class="headerlink" title="Why"></a>Why</h2><p>neural networks: hard to train, not robust, not interpretable</p>
+<h2 id="Neural-Programmer"><a href="#Neural-Programmer" class="headerlink" title="Neural Programmer"></a>Neural Programmer</h2><ul>
+<li>table-comprehension dataset, arithmetic and logic questions</li>
+<li>built-in operations -&gt; compositional programs</li>
+<li>at each step, select one segment in data source and one operation to apply to that segment</li>
+<li>end-to-end backpropagation</li>
+</ul>
+<h2 id="Neural-Programmer-Interpreters"><a href="#Neural-Programmer-Interpreters" class="headerlink" title="Neural Programmer-Interpreters"></a>Neural Programmer-Interpreters</h2><ul>
+<li>single recurrent core shared by many programs, domain-specific encoders</li>
+<li>learnable subprograms</li>
+<li>curriculum learning</li>
+<li>trained with fully-supervised execution traces</li>
+</ul>
+<h2 id="Neural-Module-Networks"><a href="#Neural-Module-Networks" class="headerlink" title="Neural Module Networks"></a>Neural Module Networks</h2><ul>
+<li>VQA</li>
+<li>trainable small modules, jointly trained</li>
+<li>the structure of modular networks is determined by the stucture of the question</li>
+<li>later work also learn the network structures by using reinforcement learning</li>
+<li>the third paper, end-to-end training, predict network structures specialized for each question</li>
+</ul>
+<h2 id="Neural-Symbolic-Machines"><a href="#Neural-Symbolic-Machines" class="headerlink" title="Neural Symbolic Machines"></a>Neural Symbolic Machines</h2><ul>
+<li>seq2seq model to map the question to a program</li>
+<li>reinforcement training</li>
+</ul>
+<h2 id="Neural-Symbolic-VQA"><a href="#Neural-Symbolic-VQA" class="headerlink" title="Neural-Symbolic VQA"></a>Neural-Symbolic VQA</h2><ul>
+<li>disentangles vision and language understanding from reasoning, scene representation</li>
+</ul>
+<h2 id="Neuro-Symbolic-Concept-Learner"><a href="#Neuro-Symbolic-Concept-Learner" class="headerlink" title="Neuro-Symbolic Concept Learner"></a>Neuro-Symbolic Concept Learner</h2><ul>
+<li><p>scene understanding and semantic parsing are trained jointly</p>
+</li>
+<li><p>can learn new concepts</p>
+</li>
+</ul>
+<h2 id="Neural-State-Machine"><a href="#Neural-State-Machine" class="headerlink" title="Neural State Machine"></a>Neural State Machine</h2><ul>
+<li>predict a scene graph for an image</li>
+<li>perform sequential reasoning over the graph</li>
+</ul>
+<h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><ul>
+<li>submodules (trainable or not) put together to be a compositional model</li>
+<li>the structure can be trainable or not trainable</li>
+<li>training methods: vision and language understanding and reasoning can be trained seperately or jointly; end-to-end training or every step gets supervised; reinforcement; curriculum learning</li>
+<li>generalization: cross-domain, learn new concepts</li>
+<li>differentiable</li>
+</ul>
 </section>
     <!-- Tags START -->
     
@@ -175,20 +215,13 @@
   <div class="nav-container">
     <!-- reverse left and right to put prev and next in a more logic postition -->
     
-      <a class="nav-left" href="/2019/11/22/test/">
+      <a class="nav-left" href="/2019/11/22/hello-world/">
         <span class="nav-arrow">← </span>
         
-          test
+          Hello World
         
       </a>
     
-    
-      <a class="nav-right" href="/2020/02/09/Overview%20of%20Neural%20Symbolic%20Reasoning/">
-        
-          Overview of Neural Symbolic Reasoning
-        
-        <span class="nav-arrow"> →</span>
-      </a>
     
   </div>
 
@@ -234,7 +267,7 @@
   <div class="toc-main">
     <strong class="toc-title">Catalog</strong>
     
-      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Quick-Start"><span class="toc-nav-text">Quick Start</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Create-a-new-post"><span class="toc-nav-text">Create a new post</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Run-server"><span class="toc-nav-text">Run server</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Generate-static-files"><span class="toc-nav-text">Generate static files</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Deploy-to-remote-sites"><span class="toc-nav-text">Deploy to remote sites</span></a></li></ol></li></ol>
+      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#Overview-of-Neural-Symbolic-Reasoning"><span class="toc-nav-text">Overview of Neural Symbolic Reasoning</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Why"><span class="toc-nav-text">Why</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Why-1"><span class="toc-nav-text">Why</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Neural-Programmer"><span class="toc-nav-text">Neural Programmer</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Neural-Programmer-Interpreters"><span class="toc-nav-text">Neural Programmer-Interpreters</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Neural-Module-Networks"><span class="toc-nav-text">Neural Module Networks</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Neural-Symbolic-Machines"><span class="toc-nav-text">Neural Symbolic Machines</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Neural-Symbolic-VQA"><span class="toc-nav-text">Neural-Symbolic VQA</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Neuro-Symbolic-Concept-Learner"><span class="toc-nav-text">Neuro-Symbolic Concept Learner</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Neural-State-Machine"><span class="toc-nav-text">Neural State Machine</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Summary"><span class="toc-nav-text">Summary</span></a></li></ol></li></ol>
     
   </div>
 </aside>
@@ -244,7 +277,7 @@
 
 <script>
   (function () {
-    var url = 'http://yoursite.com/2019/11/22/hello-world/';
+    var url = 'http://yoursite.com/2020/02/09/Overview of Neural Symbolic Reasoning/';
     var banner = ''
     if (banner !== '' && banner !== 'undefined' && banner !== 'null') {
       $('#article-banner').css({
@@ -306,7 +339,7 @@
     var gitmentConfig = "yanm1ng";
     if (gitmentConfig !== 'undefined') {
       var gitment = new Gitment({
-        id: "Hello World",
+        id: "Overview of Neural Symbolic Reasoning",
         owner: "yanm1ng",
         repo: "yanm1ng.github.io",
         oauth: {
