@@ -10,7 +10,7 @@
   
   <title>
     
-      Tags | Qi
+      Qi
     
   </title>
   <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -130,86 +130,64 @@
 </header>
 
     <div id="article-banner">
-  <h2>Tags</h2>
+  <h2>Archives</h2>
 </div>
-<main class="app-body">
-  <div id="tag-cloud">
+<main class="app-body" id="archives">
+  
+  
+  
+    <section class="time-section">
+  <h1 class="section-year">
+    2020
+  </h1>
+  <div class="section-list">
     
-      <a class="tag1" data-name="tag-LaTeX">LaTeX</a>
     
-      <a class="tag1" data-name="tag-VQA">VQA</a>
+      <div class="section-list-item">
+        <a href="/2020/02/10/Underscores%20in%20Python/" class="archive-title">Underscores in Python</a>
+        <p class="archive-date">02-10</p>
+      </div>
     
-      <a class="tag1" data-name="tag-Neural Symbolic Reasoning">Neural Symbolic Reasoning</a>
+      <div class="section-list-item">
+        <a href="/2020/02/09/Overview%20of%20Neural%20Symbolic%20Reasoning/" class="archive-title">Overview of Neural Symbolic Reasoning</a>
+        <p class="archive-date">02-09</p>
+      </div>
     
-      <a class="tag2" data-name="tag-Python">Python</a>
+      <div class="section-list-item">
+        <a href="/2020/02/09/Python%20Import%20Strategy/" class="archive-title">Python Import Strategy</a>
+        <p class="archive-date">02-09</p>
+      </div>
     
   </div>
+</section>
   
-    <div class="tag-list">
-      <h3 class="tag-name" id="tag-LaTeX">LaTeX</h3>
-      
-        <ul class="tag-preview">
-          <li>
-            <a href="/2019/12/13/LaTeX/">LaTeX</a>
-          </li>
-        </ul>
-        
-    </div>
+    <section class="time-section">
+  <h1 class="section-year">
+    2019
+  </h1>
+  <div class="section-list">
     
-    <div class="tag-list">
-      <h3 class="tag-name" id="tag-VQA">VQA</h3>
-      
-        <ul class="tag-preview">
-          <li>
-            <a href="/2020/02/09/Overview of Neural Symbolic Reasoning/">Overview of Neural Symbolic Reasoning</a>
-          </li>
-        </ul>
-        
-    </div>
     
-    <div class="tag-list">
-      <h3 class="tag-name" id="tag-Neural Symbolic Reasoning">Neural Symbolic Reasoning</h3>
-      
-        <ul class="tag-preview">
-          <li>
-            <a href="/2020/02/09/Overview of Neural Symbolic Reasoning/">Overview of Neural Symbolic Reasoning</a>
-          </li>
-        </ul>
-        
-    </div>
+      <div class="section-list-item">
+        <a href="/2019/12/13/LaTeX/" class="archive-title">LaTeX</a>
+        <p class="archive-date">12-13</p>
+      </div>
     
-    <div class="tag-list">
-      <h3 class="tag-name" id="tag-Python">Python</h3>
-      
-        <ul class="tag-preview">
-          <li>
-            <a href="/2020/02/09/Python Import Strategy/">Python Import Strategy</a>
-          </li>
-        </ul>
-        
-        <ul class="tag-preview">
-          <li>
-            <a href="/2020/02/10/Underscores in Python/">Underscores in Python</a>
-          </li>
-        </ul>
-        
-    </div>
+      <div class="section-list-item">
+        <a href="/2019/11/22/hello-world/" class="archive-title">Hello World</a>
+        <p class="archive-date">11-22</p>
+      </div>
     
+  </div>
+</section>
+  
 </main>
 
 <script>
   (function () {
-    var url = 'http://yoursite.com/tags/index.html'
-    $('#article-banner').geopattern(url)
-    $('.header').removeClass('fixed-header')
-
-    var tag = location.hash.replace('#', '')
-    if (tag) {
-      var tagId = "#tag-" + tag;
-      $("html, body").animate({
-        scrollTop: $(tagId).offset().top 
-      }, 400)
-    }
+    var url = 'http://yoursite.com/tags/LaTeX/index.html';
+    $('#article-banner').geopattern(url);
+    $('.header').removeClass('fixed-header');
   })();
 </script>
     <div class="scroll-top">
