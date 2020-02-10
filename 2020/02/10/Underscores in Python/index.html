@@ -10,7 +10,7 @@
   
   <title>
     
-      Hello World | Qi
+      Underscores in Python | Qi
     
   </title>
   <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -130,8 +130,8 @@
 </header>
 
     <div id="article-banner">
-  <h2>Hello World</h2>
-  <p class="post-date">2019-11-22</p>
+  <h2>Underscores in Python</h2>
+  <p class="post-date">2020-02-10</p>
   <div class="arrow-down">
     <a href="javascript:;" target="_blank" rel="noopener"></a>
   </div>
@@ -139,21 +139,27 @@
 <main class="app-body flex-box">
   <!-- Article START -->
   <article class="post-article">
-    <section class="markdown-content"><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+    <section class="markdown-content"><h1 id="Underscores-in-Python"><a href="#Underscores-in-Python" class="headerlink" title="Underscores in Python"></a>Underscores in Python</h1><p><a href="https://medium.com/python-features/naming-conventions-with-underscores-in-python-791251ac7097" target="_blank" rel="noopener">Naming with Underscores in Python - Medium</a></p>
+<h2 id="Single-Leading-Underscore"><a href="#Single-Leading-Underscore" class="headerlink" title="Single Leading Underscore"></a>Single Leading Underscore</h2><p><code>_var</code>     Naming convention. Indicating name is meant for internal use. </p>
+<h2 id="Double-Leading-Underscore"><a href="#Double-Leading-Underscore" class="headerlink" title="Double Leading Underscore"></a>Double Leading Underscore</h2><p><code>__var</code>     Triggers name mangling when used in class context. Enforced by the Python interpreter.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        self.name = <span class="string">'Sarah'</span></span><br><span class="line">        self._age = <span class="number">26</span></span><br><span class="line">        self.__id = <span class="number">30</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>p.__id</span><br><span class="line">AttributeError: <span class="string">'Person'</span> object has no attribute <span class="string">'__id'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>p._Person__id</span><br><span class="line"><span class="number">30</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<h2 id="Single-Trailing-Underscore"><a href="#Single-Trailing-Underscore" class="headerlink" title="Single Trailing Underscore"></a>Single Trailing Underscore</h2><p><code>var_</code>    Naming Convention. Avoid naming conflicts with Python keywords.</p>
+<h2 id="Double-Trailing-Underscore"><a href="#Double-Trailing-Underscore" class="headerlink" title="Double Trailing Underscore"></a>Double Trailing Underscore</h2><p><code>__var__</code>    Naming Convention. Indicates special methods defined by Python language.</p>
+<h2 id="Underscore"><a href="#Underscore" class="headerlink" title="Underscore"></a>Underscore</h2><p><code>_</code>        Naming Convention. Used as a name for temporary variables.</p>
 </section>
     <!-- Tags START -->
+    
+      <div class="tags">
+        <span>Tags:</span>
+        
+  <a href="/tags#Python" >
+    <span class="tag-code">Python</span>
+  </a>
+
+      </div>
     
     <!-- Tags END -->
     <!-- NAV START -->
@@ -161,13 +167,13 @@
   <div class="nav-container">
     <!-- reverse left and right to put prev and next in a more logic postition -->
     
-    
-      <a class="nav-right" href="/2019/12/13/Latex/">
+      <a class="nav-left" href="/2020/02/09/Overview%20of%20Neural%20Symbolic%20Reasoning/">
+        <span class="nav-arrow">← </span>
         
-          Latex
+          Overview of Neural Symbolic Reasoning
         
-        <span class="nav-arrow"> →</span>
       </a>
+    
     
   </div>
 
@@ -191,7 +197,7 @@
   <div class="toc-main">
     <strong class="toc-title">Catalog</strong>
     
-      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Quick-Start"><span class="toc-nav-text">Quick Start</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Create-a-new-post"><span class="toc-nav-text">Create a new post</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Run-server"><span class="toc-nav-text">Run server</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Generate-static-files"><span class="toc-nav-text">Generate static files</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Deploy-to-remote-sites"><span class="toc-nav-text">Deploy to remote sites</span></a></li></ol></li></ol>
+      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#Underscores-in-Python"><span class="toc-nav-text">Underscores in Python</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Single-Leading-Underscore"><span class="toc-nav-text">Single Leading Underscore</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Double-Leading-Underscore"><span class="toc-nav-text">Double Leading Underscore</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Single-Trailing-Underscore"><span class="toc-nav-text">Single Trailing Underscore</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Double-Trailing-Underscore"><span class="toc-nav-text">Double Trailing Underscore</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Underscore"><span class="toc-nav-text">Underscore</span></a></li></ol></li></ol>
     
   </div>
 </aside>
@@ -201,7 +207,7 @@
 
 <script>
   (function () {
-    var url = 'http://yoursite.com/2019/11/22/hello-world/';
+    var url = 'http://yoursite.com/2020/02/10/Underscores in Python/';
     var banner = ''
     if (banner !== '' && banner !== 'undefined' && banner !== 'null') {
       $('#article-banner').css({
@@ -256,7 +262,7 @@
     var gitmentConfig = "";
     if (gitmentConfig !== 'undefined') {
       var gitment = new Gitment({
-        id: "Hello World",
+        id: "Underscores in Python",
         owner: "",
         repo: "",
         oauth: {

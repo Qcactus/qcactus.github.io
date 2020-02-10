@@ -10,7 +10,7 @@
   
   <title>
     
-      Hello World | Qi
+      Latex | Qi
     
   </title>
   <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -130,8 +130,8 @@
 </header>
 
     <div id="article-banner">
-  <h2>Hello World</h2>
-  <p class="post-date">2019-11-22</p>
+  <h2>Latex</h2>
+  <p class="post-date">2019-12-13</p>
   <div class="arrow-down">
     <a href="javascript:;" target="_blank" rel="noopener"></a>
   </div>
@@ -139,21 +139,38 @@
 <main class="app-body flex-box">
   <!-- Article START -->
   <article class="post-article">
-    <section class="markdown-content"><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+    <section class="markdown-content"><h1 id="LaTeX"><a href="#LaTeX" class="headerlink" title="LaTeX"></a>LaTeX</h1><h2 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h2><p>点乘：\cdot</p>
+<p>叉乘：\times</p>
+<p>除以：\div</p>
+<p>约等于：\approx</p>
+<h2 id="矩阵、向量、行列式"><a href="#矩阵、向量、行列式" class="headerlink" title="矩阵、向量、行列式"></a>矩阵、向量、行列式</h2><p>{ccc}是居中布局，居左使用l，居右使用r。</p>
+<p>&amp;是分隔符</p>
+<p>\\是换行<br>$$<br>\left|<br>\begin{array}<br>{ccc}<br>1&amp;2&amp;3\<br>4&amp;5&amp;6\<br>7&amp;8&amp;9<br>\end{array}<br>\right|<br>$$</p>
+<p>$$<br>\left(<br>\begin{array}<br>{ccc}<br>1&amp;2&amp;3\<br>4&amp;5&amp;6\<br>7&amp;8&amp;9\<br>0 &amp; 0&amp; 0<br>\end{array}<br>\right)<br>$$</p>
+<p>$$<br>\left[<br>\begin{array}<br>{ccc}<br>1&amp;2&amp;3\<br>4&amp;5&amp;6<br>\end{array}<br>\right]<br>$$</p>
+<p>另一种写法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">\begin&#123;pmatrix&#125; 1 &amp; 2 &amp; 3 \\ 4 &amp; 5 &amp; 6 \\ 7 &amp; 8 &amp; 9 \end&#123;pmatrix&#125;</span><br><span class="line">\begin&#123;bmatrix&#125; 1 &amp; 2 &amp; 3 \\ 4 &amp; 5 &amp; 6 \\ 7 &amp; 8 &amp; 9 \end&#123;bmatrix&#125;</span><br><span class="line">\begin&#123;vmatrix&#125; 1 &amp; 2 &amp; 3 \\ 4 &amp; 5 &amp; 6 \\ 7 &amp; 8 &amp; 9 \end&#123;vmatrix&#125;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>某个维度为1就是行/列向量。</p>
+<p>另一种格式：</p>
+<img src="Latex/image-20191213132716190.png" alt="image-20191213132716190" style="zoom:50%;" />
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\left( \begin&#123;array&#125;&#123;ccc|c&#125; 1 &amp; 2 &amp; 3 &amp; 4 \\ 5 &amp; 6 &amp; 7 &amp; 8 \end&#123;array&#125; \right)</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<h2 id="方程组、分段函数"><a href="#方程组、分段函数" class="headerlink" title="方程组、分段函数"></a>方程组、分段函数</h2><p>$$<br>\begin{cases}<br>x+y+z=0\<br>x+2y+3z=0\<br>x+4y+5z=0<br>\end{cases}<br>$$</p>
+<p>$$<br>y=<br>\begin{cases}<br>x, &amp; x&gt;0,\<br>-x, &amp; x \le 0<br>\end{cases}<br>$$</p>
+<p>为了对齐也使用了&amp;</p>
 </section>
     <!-- Tags START -->
+    
+      <div class="tags">
+        <span>Tags:</span>
+        
+  <a href="/tags#LaTeX" >
+    <span class="tag-code">LaTeX</span>
+  </a>
+
+      </div>
     
     <!-- Tags END -->
     <!-- NAV START -->
@@ -161,10 +178,17 @@
   <div class="nav-container">
     <!-- reverse left and right to put prev and next in a more logic postition -->
     
-    
-      <a class="nav-right" href="/2019/12/13/Latex/">
+      <a class="nav-left" href="/2019/11/22/hello-world/">
+        <span class="nav-arrow">← </span>
         
-          Latex
+          Hello World
+        
+      </a>
+    
+    
+      <a class="nav-right" href="/2020/02/09/Python%20Import%20Strategy/">
+        
+          Python Import Strategy
         
         <span class="nav-arrow"> →</span>
       </a>
@@ -191,7 +215,7 @@
   <div class="toc-main">
     <strong class="toc-title">Catalog</strong>
     
-      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Quick-Start"><span class="toc-nav-text">Quick Start</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Create-a-new-post"><span class="toc-nav-text">Create a new post</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Run-server"><span class="toc-nav-text">Run server</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Generate-static-files"><span class="toc-nav-text">Generate static files</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Deploy-to-remote-sites"><span class="toc-nav-text">Deploy to remote sites</span></a></li></ol></li></ol>
+      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#LaTeX"><span class="toc-nav-text">LaTeX</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#运算符"><span class="toc-nav-text">运算符</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#矩阵、向量、行列式"><span class="toc-nav-text">矩阵、向量、行列式</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#方程组、分段函数"><span class="toc-nav-text">方程组、分段函数</span></a></li></ol></li></ol>
     
   </div>
 </aside>
@@ -201,7 +225,7 @@
 
 <script>
   (function () {
-    var url = 'http://yoursite.com/2019/11/22/hello-world/';
+    var url = 'http://yoursite.com/2019/12/13/Latex/';
     var banner = ''
     if (banner !== '' && banner !== 'undefined' && banner !== 'null') {
       $('#article-banner').css({
@@ -256,7 +280,7 @@
     var gitmentConfig = "";
     if (gitmentConfig !== 'undefined') {
       var gitment = new Gitment({
-        id: "Hello World",
+        id: "Latex",
         owner: "",
         repo: "",
         oauth: {
